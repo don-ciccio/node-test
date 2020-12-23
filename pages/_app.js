@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }) => {
                 <a>About</a>
             </Link>
             <Component {...pageProps} />
-            <footer>Footer links</footer>
+            <footer>Footer links footer links</footer>
         </>
     );
 };
