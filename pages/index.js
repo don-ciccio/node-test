@@ -1,7 +1,7 @@
 function HomePage() {
     return (
         <div>
-            <h1>Welcome to our custom Next.js app!</h1>
+            <h1>Welcome to my custom Next.js app!</h1>
         </div>
     );
 }
