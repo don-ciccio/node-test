@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import marked from 'marked';
 import styled from 'styled-components';
+import useCart from '../../hooks/useCart';
 
 const Container = styled.div`
     background: white;

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import Navbar from '../components/Navbar';
+import CartProvider from '../context/Cart';
+import Cart from '../components/Cart';
 
 const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@400;700&display=swap');
@@ -17,14 +19,17 @@ const Page = styled.div`
 
 const MyApp = ({ Component, pageProps }) => {
     return (
-        <Container>
+        <CartProvider>
+            <Container>
             <Normalize />
             <Navbar />
             <Page>              
                 <Component {...pageProps} />
             </Page>
-            
-        </Container>
+            <Cart />    
+            </Container>
+        </CartProvider>
+        
     );
 };
 

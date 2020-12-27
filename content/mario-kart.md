@@ -1,4 +1,5 @@
 ---
+id: 3
 name: Mario kart
 description: A great way to learn delicious things and meet people
 price: 20000
